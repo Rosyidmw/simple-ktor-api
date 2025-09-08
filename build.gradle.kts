@@ -32,6 +32,18 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.12")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
 
+    // SQLite + Exposed ORM
+    implementation("org.xerial:sqlite-jdbc:3.45.2.0")
+    implementation("org.jetbrains.exposed:exposed-core:0.55.0")
+    implementation("org.jetbrains.exposed:exposed-dao:0.55.0")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.55.0")
+
+    // Authentication
+    implementation("io.ktor:ktor-server-auth:2.3.12")
+    implementation("io.ktor:ktor-server-auth-jwt:2.3.12")
+
+// Buat hash password (bisa pakai BCrypt)
+    implementation("at.favre.lib:bcrypt:0.10.2")
 }
 
 tasks.test {
